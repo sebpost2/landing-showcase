@@ -5,7 +5,7 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import { RoundedBox, Sparkles } from "@react-three/drei";
 import { EffectComposer, Bloom } from "@react-three/postprocessing";
 import * as THREE from "three";
-import { BG, BRASS, CREAM } from "@/lib/theme";
+import { STONE as BG, ROCOTO as BRASS, PAPER as CREAM } from "@/lib/theme";
 
 const BAR_COUNT = 32;
 const BAR_WIDTH = 0.11;

@@ -1,24 +1,23 @@
 import type { Metadata } from "next";
-import { Fraunces, Inter, IBM_Plex_Mono } from "next/font/google";
+import { Bitter, Karla, Space_Mono } from "next/font/google";
 import { ScrollProgress } from "@/components/scroll-progress";
 import "./globals.css";
 
-const fraunces = Fraunces({
+const bitter = Bitter({
   variable: "--font-display",
   subsets: ["latin"],
-  style: ["normal", "italic"],
-  axes: ["opsz", "SOFT", "WONK"],
+  weight: ["700", "800", "900"],
 });
 
-const inter = Inter({
+const karla = Karla({
   variable: "--font-body",
   subsets: ["latin"],
 });
 
-const plexMono = IBM_Plex_Mono({
+const spaceMono = Space_Mono({
   variable: "--font-mono",
   subsets: ["latin"],
-  weight: ["400", "500"],
+  weight: ["400", "700"],
 });
 
 export const metadata: Metadata = {
@@ -40,9 +39,9 @@ export default function RootLayout({
   return (
     <html
       lang="es"
-      className={`${fraunces.variable} ${inter.variable} ${plexMono.variable} dark h-full antialiased`}
+      className={`${bitter.variable} ${karla.variable} ${spaceMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-bg text-cream font-body">
+      <body className="min-h-full flex flex-col bg-stone text-ink font-body">
         <ScrollProgress />
         {children}
       </body>

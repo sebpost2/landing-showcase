@@ -1,5 +1,5 @@
 import { ImageResponse } from "next/og";
-import { BG, BRASS } from "@/lib/theme";
+import { STONE, ROCOTO } from "@/lib/theme";
 
 export const size = { width: 32, height: 32 };
 export const contentType = "image/png";
@@ -15,9 +15,9 @@ export default function Icon() {
           alignItems: "center",
           justifyContent: "center",
           fontSize: 20,
-          fontStyle: "italic",
-          background: BG,
-          color: BRASS,
+          fontWeight: 800,
+          background: STONE,
+          color: ROCOTO,
           borderRadius: 6,
           fontFamily: "Georgia, serif",
         }}

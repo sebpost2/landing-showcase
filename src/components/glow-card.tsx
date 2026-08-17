@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef, type ReactNode } from "react";
-import { BRASS_RGB } from "@/lib/theme";
+import { ROCOTO_RGB as BRASS_RGB } from "@/lib/theme";
 
 export function GlowCard({
   children,

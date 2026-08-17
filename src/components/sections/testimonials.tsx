@@ -38,28 +38,19 @@ export function Testimonials() {
   const current = QUOTES[index];
 
   return (
-    <section className="relative overflow-hidden px-6 py-32">
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-0 flex items-end justify-center gap-1.5 opacity-[0.07]"
-      >
-        {Array.from({ length: 20 }).map((_, i) => (
-          <span
-            key={i}
-            className="w-1.5 origin-bottom rounded-full bg-brass animate-[eq-bounce_1.6s_ease-in-out_infinite]"
-            style={{
-              height: `${30 + Math.abs(Math.sin(i * 0.7)) * 90}px`,
-              animationDelay: `${i * 0.08}s`,
-            }}
-          />
-        ))}
-      </div>
-
+    <section className="px-6 py-32">
       <div className="relative mx-auto max-w-2xl text-center">
-        <p className="font-mono text-xs uppercase tracking-[0.3em] text-brass">
+        <span
+          aria-hidden
+          className="pointer-events-none absolute -top-10 left-1/2 -translate-x-1/2 font-display text-[10rem] font-black leading-none text-rocoto/10"
+        >
+          &rdquo;
+        </span>
+
+        <p className="font-mono text-xs uppercase tracking-[0.35em] text-rocoto">
           Lo que dicen nuestros clientes
         </p>
-        <div className="mt-10 min-h-[160px]">
+        <div className="relative mt-10 min-h-[160px]">
           <AnimatePresence mode="wait">
             <motion.div
               key={current.name}
@@ -68,10 +59,10 @@ export function Testimonials() {
               exit={{ opacity: 0, y: -10 }}
               transition={{ duration: 0.5, ease: easeOut }}
             >
-              <p className="font-display text-2xl italic text-cream">
-                &ldquo;{current.quote}&rdquo;
+              <p className="font-display text-2xl font-medium text-ink">
+                {current.quote}
               </p>
-              <p className="mt-4 font-mono text-xs uppercase tracking-widest text-cream-muted">
+              <p className="mt-4 font-mono text-xs uppercase tracking-widest text-ink-muted">
                 {current.name} · {current.role}
               </p>
             </motion.div>
@@ -84,7 +75,7 @@ export function Testimonials() {
               onClick={() => setIndex(i)}
               aria-label={`Show testimonial from ${q.name}`}
               className={`h-1.5 w-6 rounded-full transition-colors ${
-                i === index ? "bg-brass" : "bg-surface"
+                i === index ? "bg-rocoto" : "bg-ink/15"
               }`}
             />
           ))}
