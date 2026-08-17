@@ -24,10 +24,10 @@ const DISHES = [
     image: "/images/adobo3.jpg",
   },
   {
-    name: "Ocopa",
-    desc: "Papas doradas bañadas en salsa de huacatay, maní y queso fresco.",
+    name: "Papa a la ocopa",
+    desc: "Papa sancochada bañada en ocopa: ají, huacatay, maní y queso fresco.",
     price: "S/ 18",
-    image: "/images/ocopa2.jpg",
+    image: "/images/papa-ocopa.jpg",
   },
 ];
 
