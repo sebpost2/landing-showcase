@@ -22,7 +22,7 @@ const INFO = [
 
 export function Pricing() {
   return (
-    <section id="pricing" className="px-6 py-32">
+    <section id="pricing" className="px-6 py-20">
       <div className="mx-auto max-w-5xl">
         <p className="font-mono text-xs uppercase tracking-[0.35em] text-rocoto">
           Información

@@ -28,7 +28,7 @@ const STEPS = [
 
 export function Features() {
   return (
-    <section id="features" className="px-6 py-32">
+    <section id="features" className="px-6 py-20">
       <div className="mx-auto max-w-5xl">
         <p className="font-mono text-xs uppercase tracking-[0.35em] text-rocoto">
           Cómo reservar

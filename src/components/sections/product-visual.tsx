@@ -33,7 +33,7 @@ const DISHES = [
 
 export function ProductVisual() {
   return (
-    <section className="px-6 py-32">
+    <section className="px-6 py-20">
       <div className="mx-auto max-w-5xl">
         <p className="text-center font-mono text-xs uppercase tracking-[0.35em] text-rocoto">
           La carta

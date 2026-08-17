@@ -3,7 +3,7 @@ const WHATSAPP_URL =
 
 export function Cta() {
   return (
-    <section id="try" className="px-6 py-32 text-center">
+    <section id="try" className="px-6 py-20 text-center">
       <p className="font-mono text-xs uppercase tracking-[0.35em] text-rocoto">
         Te esperamos
       </p>

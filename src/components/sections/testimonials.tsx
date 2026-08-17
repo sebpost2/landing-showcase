@@ -38,7 +38,7 @@ export function Testimonials() {
   const current = QUOTES[index];
 
   return (
-    <section className="px-6 py-32">
+    <section className="px-6 py-20">
       <div className="relative mx-auto max-w-2xl text-center">
         <span
           aria-hidden
