@@ -22,9 +22,14 @@ const plexMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Mesa — AI mastering for independent musicians",
+  metadataBase: new URL(
+    process.env.VERCEL_PROJECT_PRODUCTION_URL
+      ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+      : "http://localhost:3000"
+  ),
+  title: "Sillar — Cocina arequipeña con alma",
   description:
-    "Studio-grade mastering in under a minute. Upload a track, get a master tuned like a real engineer did it.",
+    "Reservá tu mesa por WhatsApp en minutos. Cocina arequipeña tradicional en el Centro Histórico de Arequipa.",
 };
 
 export default function RootLayout({
@@ -34,7 +39,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="es"
       className={`${fraunces.variable} ${inter.variable} ${plexMono.variable} dark h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-bg text-cream font-body">

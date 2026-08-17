@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 import { BG, BRASS, CREAM, CREAM_MUTED, BRASS_RGB, CREAM_RGB } from "@/lib/theme";
 
-export const alt = "Mesa — AI mastering for independent musicians";
+export const alt = "Sillar — Cocina arequipeña con alma";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -61,7 +61,7 @@ export default function OGImage() {
             fontFamily: "monospace",
           }}
         >
-          Mesa
+          Sillar
         </div>
 
         <div
@@ -73,7 +73,7 @@ export default function OGImage() {
             fontFamily: "Georgia, serif",
           }}
         >
-          Master your sound
+          Cocina arequipeña con alma
         </div>
 
         <div
@@ -83,7 +83,7 @@ export default function OGImage() {
             fontFamily: "system-ui, sans-serif",
           }}
         >
-          AI mastering, studio-grade, in under a minute
+          Reservá tu mesa por WhatsApp en minutos
         </div>
       </div>
     ),

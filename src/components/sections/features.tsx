@@ -4,31 +4,26 @@ import { motion } from "motion/react";
 import { easeOut } from "@/lib/motion";
 import { GlowCard } from "@/components/glow-card";
 
-const CHAIN = [
+const STEPS = [
   {
-    stage: "INPUT",
-    title: "Drop it in",
-    copy: "WAV or MP3, up to 24-bit. No account needed to hear the first result.",
+    stage: "1",
+    title: "Escribinos",
+    copy: "Mandanos un mensaje por WhatsApp con la fecha, hora y cuántos son.",
   },
   {
-    stage: "EQ",
-    title: "Balanced automatically",
-    copy: "Frequency curve matched to genre, and to a reference track if you give it one.",
+    stage: "2",
+    title: "Confirmamos al toque",
+    copy: "Te respondemos en minutos, sin dejarte esperando en el chat.",
   },
   {
-    stage: "COMP",
-    title: "Glued, not squashed",
-    copy: "Multiband dynamics tuned the way an engineer rides a compressor, not a loudness knob.",
+    stage: "3",
+    title: "Mesa lista",
+    copy: "Llegás y tu mesa ya está preparada, sin filas ni imprevistos.",
   },
   {
-    stage: "MASTER",
-    title: "Commercial loudness",
-    copy: "Full-band limiting without pumping or pre-echo, tuned to genre targets.",
-  },
-  {
-    stage: "OUT",
-    title: "Streaming-ready",
-    copy: "-14 LUFS by default. Stems back in under a minute.",
+    stage: "4",
+    title: "Disfrutá",
+    copy: "El resto es nuestro: cocina arequipeña tradicional, a tu ritmo.",
   },
 ];
 
@@ -37,14 +32,14 @@ export function Features() {
     <section id="features" className="px-6 py-32">
       <div className="mx-auto max-w-5xl">
         <p className="font-mono text-xs uppercase tracking-[0.3em] text-brass">
-          Signal chain
+          Cómo funciona
         </p>
         <h2 className="mt-3 max-w-xl font-display text-4xl italic text-cream sm:text-5xl">
-          Five stages, one pass
+          Reservar toma menos de un minuto
         </h2>
 
-        <div className="mt-16 grid grid-cols-1 gap-px overflow-hidden rounded-2xl bg-surface sm:grid-cols-5">
-          {CHAIN.map((step, i) => (
+        <div className="mt-16 grid grid-cols-1 gap-px overflow-hidden rounded-2xl bg-surface sm:grid-cols-4">
+          {STEPS.map((step, i) => (
             <motion.div
               key={step.stage}
               initial={{ opacity: 0, y: 20 }}

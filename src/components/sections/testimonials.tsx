@@ -7,21 +7,21 @@ import { easeOut } from "@/lib/motion";
 const QUOTES = [
   {
     quote:
-      "I sent it a rough mix at 1am and got back something that actually competed on the same playlist as the reference track.",
-    name: "Nadia Ortiz",
-    role: "Bedroom producer",
+      "Reservé por WhatsApp un viernes a última hora y ya tenían mesa lista cuando llegamos. El rocoto relleno, espectacular.",
+    name: "Mariana Chávez",
+    role: "Cliente frecuente",
   },
   {
     quote:
-      "Stopped paying $80/track for mastering. Same loudness target, way faster turnaround.",
-    name: "Denny Ruiz",
-    role: "Indie label, 4 releases",
+      "Llevé a mis papás por su aniversario. La atención se sintió como de casa, no como un restaurante turístico más.",
+    name: "Renzo Delgado",
+    role: "Arequipa",
   },
   {
     quote:
-      "The comp stage is the first automated master that doesn't just slam a limiter on top.",
-    name: "Priya Shah",
-    role: "Mix engineer",
+      "El chupe de camarones me recordó al de mi abuela. Y responden al toque por WhatsApp, eso ya vale mucho.",
+    name: "Fiorella Ampuero",
+    role: "Cliente frecuente",
   },
 ];
 
@@ -57,7 +57,7 @@ export function Testimonials() {
 
       <div className="relative mx-auto max-w-2xl text-center">
         <p className="font-mono text-xs uppercase tracking-[0.3em] text-brass">
-          On the record
+          Lo que dicen nuestros clientes
         </p>
         <div className="mt-10 min-h-[160px]">
           <AnimatePresence mode="wait">

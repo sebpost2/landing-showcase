@@ -1,13 +1,10 @@
 "use client";
 
-import dynamic from "next/dynamic";
 import { motion } from "motion/react";
-import { Knob } from "@/components/knob";
 import { easeOut } from "@/lib/motion";
 
-const HeroScene = dynamic(() => import("@/components/three/hero-scene"), {
-  ssr: false,
-});
+const WHATSAPP_URL =
+  "https://wa.me/51983848628?text=Hola%2C%20quiero%20reservar%20una%20mesa%20en%20Sillar";
 
 export function Hero() {
   return (
@@ -16,18 +13,14 @@ export function Hero() {
         initial={{ opacity: 0, y: 12 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: easeOut }}
-        className="flex items-center gap-6"
+        className="text-center"
       >
-        <Knob label="Warmth" />
-        <div className="text-center">
-          <p className="font-mono text-xs uppercase tracking-[0.3em] text-brass">
-            Mesa
-          </p>
-          <h1 className="text-5xl font-display italic text-cream sm:text-7xl">
-            Master your sound
-          </h1>
-        </div>
-        <Knob label="Presence" />
+        <p className="font-mono text-xs uppercase tracking-[0.3em] text-brass">
+          Arequipa
+        </p>
+        <h1 className="mt-3 font-display text-5xl italic text-cream sm:text-7xl">
+          Sillar
+        </h1>
       </motion.div>
 
       <motion.p
@@ -36,36 +29,32 @@ export function Hero() {
         transition={{ duration: 0.8, delay: 0.1, ease: easeOut }}
         className="max-w-md text-center font-body text-cream-muted"
       >
-        AI mastering, studio-grade, in under a minute. Upload a track, hear it
-        tuned like a real engineer did it.
+        Cocina arequipeña con alma, en el corazón del Centro Histórico. Mesa
+        lista en minutos, sin llamadas ni esperas.
       </motion.p>
-
-      <div
-        className="h-64 w-full max-w-3xl"
-        style={{
-          maskImage:
-            "radial-gradient(ellipse 60% 70% at center, black 45%, transparent 100%)",
-          WebkitMaskImage:
-            "radial-gradient(ellipse 60% 70% at center, black 45%, transparent 100%)",
-        }}
-      >
-        <HeroScene />
-      </div>
 
       <motion.div
         initial={{ opacity: 0, y: 12 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.2, ease: easeOut }}
-        className="flex items-center gap-4"
+        className="flex flex-col items-center gap-4"
       >
-        <a
-          href="#try"
-          className="rounded-full bg-brass px-6 py-3 font-mono text-sm text-bg transition hover:bg-cream"
-        >
-          Try it free
-        </a>
+        <div className="relative inline-block">
+          <span
+            aria-hidden
+            className="absolute inset-0 rounded-full bg-brass blur-xl animate-[cta-pulse_3s_ease-in-out_infinite]"
+          />
+          <a
+            href={WHATSAPP_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative inline-block rounded-full bg-brass px-6 py-3 font-mono text-sm text-bg transition hover:bg-cream"
+          >
+            Reservá tu mesa por WhatsApp
+          </a>
+        </div>
         <span className="font-mono text-xs text-cream-muted">
-          -14 LUFS · 24-bit · &lt;40ms
+          Lun–Dom · 12pm–11pm · Jerusalén 302, Arequipa
         </span>
       </motion.div>
     </section>
