@@ -27,7 +27,7 @@ const DISHES = [
     name: "Ocopa",
     desc: "Papas doradas bañadas en salsa de huacatay, maní y queso fresco.",
     price: "S/ 18",
-    image: "/images/ocopa.jpg",
+    image: "/images/ocopa2.jpg",
   },
 ];
 
