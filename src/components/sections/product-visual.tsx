@@ -24,7 +24,7 @@ const DISHES = [
     image: "/images/adobo3.jpg",
   },
   {
-    name: "Papa a la ocopa",
+    name: "Papa con ocopa",
     desc: "Papa sancochada bañada en ocopa: ají, huacatay, maní y queso fresco.",
     price: "S/ 18",
     image: "/images/papa-ocopa.jpg",
