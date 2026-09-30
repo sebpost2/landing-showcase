@@ -6,7 +6,7 @@ import { easeOut } from "@/lib/motion";
 const STEPS = [
   {
     stage: "01",
-    title: "Escribinos",
+    title: "Escríbenos",
     copy: "Mandanos un mensaje por WhatsApp con la fecha, hora y cuántos son.",
   },
   {

@@ -8,7 +8,7 @@ export function Cta() {
         Te esperamos
       </p>
       <h2 className="mx-auto mt-3 max-w-lg font-display text-4xl font-black text-ink sm:text-5xl">
-        Reservá tu mesa
+        Reserva tu mesa
       </h2>
       <p className="mx-auto mt-4 max-w-sm text-ink-muted">
         Un mensaje por WhatsApp y listo. Sin llamadas, sin esperas.

@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   ),
   title: "Sillar — Cocina arequipeña con alma",
   description:
-    "Reservá tu mesa por WhatsApp en minutos. Cocina arequipeña tradicional en el Centro Histórico de Arequipa.",
+    "Reserva tu mesa por WhatsApp en minutos. Cocina arequipeña tradicional en el Centro Histórico de Arequipa.",
 };
 
 export default function RootLayout({
